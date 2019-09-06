@@ -1,0 +1,24 @@
+{
+  "name": "echarts-adapter",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@gitlab.finxos.com:Cloud-Project/echarts-adapter.git",
+  "author": "slu <lsc817ee@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "prettier": "^1.16.4",
+    "rake-git": "github:afeiship/rake-git",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "lodash": "^4.17.11"
+  }
+}
