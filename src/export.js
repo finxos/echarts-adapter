@@ -5,4 +5,6 @@ import { assembleData } from './assembleData';
 import adaptInst from './adapt/adaptInst';
 import china from './lib/china.json';
 
-export { echarts, toEcharts, utils, assembleData, adaptInst, china };
+echarts.registerMap('china', china);
+
+export { echarts, toEcharts, utils, assembleData, adaptInst };
