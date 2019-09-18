@@ -3,6 +3,7 @@ import { trimValue } from '../utils';
 export default function raw(option) {
   const stdOption = { ...option };
   let _isTransform = false;
+  if (!option.series) return stdOption;
   stdOption.series = option.series.map(_s => {
     if (!_s.transform) {
       return _s;
