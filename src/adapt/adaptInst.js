@@ -69,7 +69,10 @@ function _handleOptionTooltip(option) {
 function _handleOption(option) {
   if (option.hasOwnProperty('options')) {
     option.options = option.options.map(optionItem => {
-      _handleOptionGrid(optionItem);
+      //_handleOptionGrid(optionItem);
+      optionItem.grid = {
+        containLabel: true
+      };
       if (optionItem.hasOwnProperty('xAxis')) {
         _handleOptionxAxis(optionItem);
       }
