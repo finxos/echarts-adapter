@@ -34,7 +34,7 @@ function _handleOptionxAxis(option) {
       if (ogFormatter) {
         value = ogFormatter(value);
       }
-      const isDate = value.startsWith('2');
+      const isDate = typeof value == 'string' && value.startsWith('2');
       if (isDate) {
         return value;
       }
@@ -48,7 +48,8 @@ function _handleOptionxAxis(option) {
   return option;
 }
 function _handleOptionDataZoom(option) {
-  option.dataZoom = dataZoom;
+  if (option.series && option.series[0] && option.series[0].type != 'pie')
+    option.dataZoom = dataZoom;
   return option;
 }
 function _handleOptionTooltip(option) {
