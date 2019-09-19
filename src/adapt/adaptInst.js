@@ -48,7 +48,12 @@ function _handleOptionxAxis(option) {
   return option;
 }
 function _handleOptionDataZoom(option) {
-  if (option.series && option.series[0] && option.series[0].type != 'pie')
+  if (
+    option.series &&
+    option.series[0] &&
+    option.series[0].type &&
+    option.series[0].type != 'pie'
+  )
     option.dataZoom = dataZoom;
   return option;
 }
