@@ -72,7 +72,9 @@ function _handleOption(option) {
       //_handleOptionGrid(optionItem);
       delete optionItem.title;
       optionItem.grid = {
-        containLabel: true
+        containLabel: true,
+        left: 10,
+        right: 10
       };
       if (optionItem.hasOwnProperty('xAxis')) {
         _handleOptionxAxis(optionItem);
