@@ -70,6 +70,7 @@ function _handleOption(option) {
   if (option.hasOwnProperty('options')) {
     option.options = option.options.map(optionItem => {
       //_handleOptionGrid(optionItem);
+      delete optionItem.title;
       optionItem.grid = {
         containLabel: true
       };
