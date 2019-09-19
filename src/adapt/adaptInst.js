@@ -52,7 +52,7 @@ function _handleOptionDataZoom(option) {
     option.series &&
     option.series[0] &&
     option.series[0].type &&
-    option.series[0].type != 'pie'
+    (option.series[0].type == 'line' || option.series[0].type == 'bar')
   )
     option.dataZoom = dataZoom;
   return option;
