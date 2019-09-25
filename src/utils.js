@@ -71,6 +71,8 @@ export function dateFormatterSpec(date, formatter) {
     return fnsFormat(date, 'YYYY-MM');
   } else if (formatter == 'YYYYQ') {
     return `${fnsFormat(date, 'YYYY')}Q${fnsFormat(date, 'Q')}`;
+  } else {
+    return date;
   }
 }
 

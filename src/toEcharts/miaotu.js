@@ -30,14 +30,15 @@ export default function miaotu(config, dataset, infoset) {
       rotate: xAxisList[0].rotate,
       interval: xAxisList[0].axisLabelInterval === 0 ? 0 : 'auto',
       formatter: value => {
-        if (
-          xAxisList[0].axisLabelFormatter &&
-          xAxisList[0].axisLabelFormatter != 'D'
-        ) {
-          return dateFormatterSpec(value, xAxisList[0].axisLabelFormatter);
-        } else {
-          return dateFormatter(value, freq);
-        }
+        return dateFormatter(value, freq);
+        // if (
+        //   xAxisList[0].axisLabelFormatter &&
+        //   xAxisList[0].axisLabelFormatter != 'D'
+        // ) {
+        //   return dateFormatterSpec(value, xAxisList[0].axisLabelFormatter);
+        // } else {
+        //   return dateFormatter(value, freq);
+        // }
       }
     },
     axisLine: {
