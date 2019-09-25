@@ -15,7 +15,7 @@ const defaultOption = {
     margin: 4,
     fontSize: 11,
     color: '#555555',
-    verticalAlign: 'bottom',
+    verticalAlign: 'center',
     formatter: function(value) {
       return parseFloat(value.toFixed(4));
     }
