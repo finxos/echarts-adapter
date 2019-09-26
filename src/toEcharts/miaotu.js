@@ -30,7 +30,7 @@ export default function miaotu(config, dataset, infoset) {
       rotate: xAxisList[0].rotate,
       interval: xAxisList[0].axisLabelInterval === 0 ? 0 : 'auto',
       formatter: value => {
-        return dateFormatter(value, freq);
+        return dateFormatterSpec(value, xAxisList[0].axisLabelFormatter);
         // if (
         //   xAxisList[0].axisLabelFormatter &&
         //   xAxisList[0].axisLabelFormatter != 'D'
