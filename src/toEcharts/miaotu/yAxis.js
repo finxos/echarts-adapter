@@ -15,7 +15,7 @@ const defaultOption = {
   axisLabel: {
     margin: 4,
     fontSize: 11,
-    color: '#555555',
+    color: '#999',
     verticalAlign: 'center',
     formatter: function(value) {
       return parseFloat(value.toFixed(4));
