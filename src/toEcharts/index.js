@@ -2,7 +2,7 @@ import miaotu from './miaotu';
 import raw from './raw';
 
 export default function (option, dataset, infoset) {
-    let convert = null;
+    var convert = null;
 
     if (
         !option.hasOwnProperty('format') &&
