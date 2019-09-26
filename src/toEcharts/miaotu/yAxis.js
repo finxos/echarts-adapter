@@ -6,7 +6,8 @@ const defaultOption = {
   position: 'left',
   scale: true,
   axisLine: {
-    show: true
+    show: true,
+    lineStyle: { color: '#999' }
   },
   axisTick: {
     show: true

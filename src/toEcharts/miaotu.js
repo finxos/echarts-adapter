@@ -42,7 +42,8 @@ export default function miaotu(config, dataset, infoset) {
       }
     },
     axisLine: {
-      show: xAxisList[0].axisLineShow === false ? false : true
+      show: xAxisList[0].axisLineShow === false ? false : true,
+      lineStyle: { color: '#999' }
     },
     axisTick: {
       show: xAxisList[0].axisTickShow === false ? false : true,
