@@ -26,6 +26,7 @@ export default function miaotu(config, dataset, infoset) {
       show: background === 'intersect' || background === 'vertical'
     },
     axisLabel: {
+      color: '#666',
       show: xAxisList[0].axisLabelShow === false ? false : true,
       rotate: xAxisList[0].rotate,
       interval: xAxisList[0].axisLabelInterval === 0 ? 0 : 'auto',
@@ -43,7 +44,7 @@ export default function miaotu(config, dataset, infoset) {
     },
     axisLine: {
       show: xAxisList[0].axisLineShow === false ? false : true,
-      lineStyle: { color: '#999' }
+      lineStyle: { color: '#666' }
     },
     axisTick: {
       show: xAxisList[0].axisTickShow === false ? false : true,

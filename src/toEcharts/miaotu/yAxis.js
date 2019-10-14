@@ -7,7 +7,7 @@ const defaultOption = {
   scale: true,
   axisLine: {
     show: true,
-    lineStyle: { color: '#999' }
+    lineStyle: { color: '#666' }
   },
   axisTick: {
     show: true
@@ -15,7 +15,7 @@ const defaultOption = {
   axisLabel: {
     margin: 4,
     fontSize: 11,
-    color: '#999',
+    color: '#666',
     verticalAlign: 'center',
     formatter: function(value) {
       return parseFloat(value.toFixed(4));
